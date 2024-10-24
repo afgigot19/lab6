@@ -1,7 +1,10 @@
 #Name: Arthur Gigot
 
 def decode(code):
-    pass
+    original = ""
+    for digit in code:
+        original += str((int(digit) - 3) % 10)
+    return original
 
 def encode(initial):
     global code
